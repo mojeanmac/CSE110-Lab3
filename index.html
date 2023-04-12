@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pomodoro Timer First Brainstorm</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="media/cat-blush.gif">
+  </head>
+  <body>
+    <header>
+      <h1>Pomodoro Timer First Brainstorm</h1>
+      <h3>Topic: Brainstorming</h2>
+      <h3>Date: 4/13/23</h2>
+
+      <nav>
+          <li><a href="#attendance">Attendance List</a></li>
+          <li><a href="#agenda">Agenda</a></li>
+          <li><a href="#action">Action Items</a></li>
+          <li><a href="#misc">Misc Comments</a></li>
+          <li><a href="#pictures">Pictures and Diagrams</a></li>
+          <li><a href="#video">Meeting Recording</a></li>
+          <li><a href="#audio">Meeting Audio</a></li>
+          <li><a href="#survey">Ice Cream Ordering Kiosk</a></li>
+      </nav>
+    </header>
+
+    <section>
+      <div id = "attendance">
+        <h2>Attendance List</h2>
+        <ul>
+          <li>Molly</li>
+          <li>Sean</li>
+          <li>Jenny</li>
+          <li>Austin</li>
+        </ul>
+      </div>
+  
+      <div id = "agenda"><h2>Agenda</h2>
+        <p>In this meeting, we finished up introducing ourselves and began brainstorming concepts for our <strong>pomodoro timer</strong>.
+        <br>
+        We're still not <em>exactly</em> sure what a pomodoro timer is though.</p>
+  
+        <details>
+          <summary>Disclaimer</summary>
+          We didn't actually get anything done.
+        </details>
+      </div>
+    
+      <div id = "action">
+        <span>
+          <h2>Action Items</h2>
+          <h4>Continuing from last meeting</h4>
+          <ol>
+            <li>Introductions</li>
+            <li>Icebreakers</li>
+            <li>Ice cream</li>
+          </ol>
+        </span>
+        
+        <span>
+          <h4>New from this meeting</h4>
+          <ol>
+            <li>What is pomodoro?</li>
+            <li>What are the most optimal pomodoro intervals?</li>
+            <li>Calculate the surface area of the sun</li>
+          </ol>
+        </span>
+      </div>
+  
+      <div id = "misc">
+        <h2>Misc Comments</h2>
+        <ul>
+          <li>Will there be food next meeting?</li>
+          <li>TODO: Learn to code</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div id = "pictures">
+        <h2>Pictures and Diagrams</h2>
+        <img src="media/whiteboard.png" alt="Catherine + the history of electrical engineering" width="400"/>
+      </div>
+
+      <div id = "video">
+        <h2>Meeting Recording</h2>
+        <video src="media/cat.mp4" width="400" controls>
+          <p>
+            Your browser doesn't support HTML video. Here is a
+            <a href="media/cat.mp4">link to the video</a> instead.
+          </p>
+        </video>
+      </div>
+
+      <div id = "audio">
+        <h2>Meeting Audio</h2>
+        <audio controls>
+          <source src="media/vine_boom.mp3" type="audio/mp3" />
+          <p>
+            Your browser doesn't support this audio file. Here is a
+            <a href="media/vine_boom.mp3">link to the audio</a> instead.
+          </p>
+        </audio>
+      </div>
+    </section>
+
+    <section>
+      <div id = "survey">
+        <h2>Ice Cream Ordering Kiosk</h2>
+        <form method="get">
+          <div>
+            <label for="name">Enter your name: </label>
+            <input type="text" id="name">
+          </div>
+
+          <div>
+            <label for="pets">Choose a flavor:</label>
+            <select id="pets">
+                <option value="">--Please choose a flavor--</option>
+                <option value="v">Vanilla</option>
+                <option value="c">Chocolate</option>
+                <option value="s">Strawberry</option>
+                <option value="m">Mint</option>
+                <option value="cd">Cookie Dough</option>
+                <option value="mb">Maple Bacon</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="cones">Choose an eating apparatus:</label>
+            <input list="holders" id="cones"/>
+            <datalist id="holders">
+              <option value="Cup"></option>
+              <option value="Cake Cone"></option>
+              <option value="Sugar Cone"></option>
+              <option value="Waffle Cone"></option>
+            </datalist>
+          </div>
+          
+          <fieldset>
+            <legend>Toppings?</legend>
+            <div>
+              <input type="checkbox" id="sprinkles">
+              <label for="sprinkles">Sprinkles</label>
+            </div>
+        
+            <div>
+              <input type="checkbox" id="oreos">
+              <label for="oreos">Oreos</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="bacon" checked>
+              <label for="bacon">Bacon</label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Delivery method:</legend>
+        
+            <div>
+              <input type="radio" id="pickup" value="pickup">
+              <label for="pickup">Pick-up</label>
+            </div>
+        
+            <div>
+              <input type="radio" id="driver" value="driver">
+              <label for="driver">Delivery driver</label>
+            </div>
+        
+            <div>
+              <input type="radio" id="drone" value="drone" checked>
+              <label for="drone">Drone</label>
+            </div>
+          </fieldset>
+          
+          <div>
+            <label for="delivery">Delivery date:</label>
+            <input type="date" id="delivery"
+                  value="2023-4-13"
+                  min="2023-01-01" max="2023-12-31">
+          </div>
+
+          <div>
+            <label for="request">Special requests:</label>
+            <br>
+            <textarea id="request" rows="5" cols="33">
+            </textarea>
+          </div>
+          
+          <button name="button">Submit</button>
+
+        </form>
+      </div>
+    </section>
+
+    <hr>
+  </body>
+  <footer>
+    <p><i>This</i> is a <b>footer</b>.</p>
+  </footer>
+</html>
