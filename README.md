@@ -1,1 +1,1 @@
-# Lab 2 - Starter
+https://mojeanmac.github.io/CSE110-Lab2/index.html
