@@ -17,6 +17,11 @@ header, footer {
 
 h1 {
     font-size: 32pt;
+    position: sticky;
+    top: 0;
+    background-color: #4F4557;
+    margin-bottom: 10px;
+    padding-bottom: 5pt 5pt 0 0;
 }
 
 h1, h2 {
@@ -45,6 +50,20 @@ nav li a:hover {
 
 #main {
     margin-left: 1in;
+    display: inline-block;
+    max-width: 80%;
+}
+
+h4 + ol > li {
+    color: pink;
+}
+
+h2 ~ ul > li {
+    color: peachpuff;
+}
+
+summary {
+    color: #B59AB7;
 }
 
 #media {
@@ -54,15 +73,57 @@ nav li a:hover {
     margin: 0 0 5vh 0;
 }
 
-#media > .item{
+div[class="item"] {
     margin: auto;
 }
 
 img, video, audio{
-    width: 400px;
-    padding: 40px 20px 40px 20px;
+    height: 300px;
+    padding: 20px;
     background-color: #6D5D6E;
     border-radius: 10px;
+}
+
+audio {
+    border-radius: 20px;
+    min-width: 300px;
+    height: 50px;
+}
+
+h2.mh {
+    color: #B59AB7;
+}
+
+#survey {
+    display: grid;
+    justify-content: center;
+    align-items: start;
+}
+
+.question {
+    margin: 20px 20px 0 0;
+    background-color: #4F4557;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+fieldset {
+    text-align: left;
+    border: none;
+}
+
+legend {
+    text-align: center;
+    color: peachpuff;
+}
+
+label {
+    color: peachpuff;
+}
+
+input, select, textarea, button, datalist{
+    color:#4F4557;
 }
 
 footer {

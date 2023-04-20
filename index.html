@@ -81,12 +81,12 @@
 
     <section id = "media">
       <div class = "item">
-        <h2>Pictures and Diagrams</h2>
+        <h2 class = "mh">Pictures and Diagrams</h2>
         <img src="media/whiteboard.png" alt="Catherine + the history of electrical engineering">
       </div>
 
       <div class = "item">
-        <h2>Meeting Recording</h2>
+        <h2 class = "mh">Meeting Recording</h2>
         <video src="media/cat.mp4" controls>
           <p>
             Your browser doesn't support HTML video. Here is a
@@ -96,7 +96,7 @@
       </div>
 
       <div class = "item">
-        <h2>Meeting Audio</h2>
+        <h2 class = "mh">Meeting Audio</h2>
         <audio controls>
           <source src="media/fish.mp3" type="audio/mp3">
           <p>
@@ -111,12 +111,12 @@
       <div id = "survey">
         <h2>Virtual Ice Cream Ordering Kiosk</h2>
         <form method="get">
-          <div>
+          <div class = "question">
             <label for="name">Enter your name: </label>
             <input type="text" id="name" name="name">
           </div>
 
-          <div>
+          <div class = "question">
             <label for="pets">Choose a flavor:</label>
             <select id="pets" name="pets">
                 <option value="">--Please choose a flavor--</option>
@@ -129,7 +129,7 @@
             </select>
           </div>
 
-          <div>
+          <div class = "question">
             <label for="holders">Choose an eating apparatus:</label>
             <input list="cones" id="holders" name="holders">
             <datalist id="cones">
@@ -140,49 +140,52 @@
             </datalist>
           </div>
           
-          <fieldset>
-            <legend>Toppings?</legend>
-            <div>
-              <input type="checkbox" id="sprinkles" name="sprinkles">
-              <label for="sprinkles">Sprinkles</label>
-            </div>
-        
-            <div>
-              <input type="checkbox" id="oreos" name="oreos">
-              <label for="oreos">Oreos</label>
-            </div>
-
-            <div>
-              <input type="checkbox" id="bacon" name="bacon" checked>
-              <label for="bacon">Bacon</label>
-            </div>
-          </fieldset>
-
-          <fieldset>
-            <legend>Delivery method:</legend>
-        
-            <div>
-              <input type="radio" id="pickup" value="pickup" name="method">
-              <label for="pickup">Pick-up</label>
-            </div>
-        
-            <div>
-              <input type="radio" id="driver" value="driver" name="method">
-              <label for="driver">Delivery driver</label>
-            </div>
-        
-            <div>
-              <input type="radio" id="drone" value="drone" name="method" checked>
-              <label for="drone">Drone</label>
-            </div>
-          </fieldset>
+          <div class = "question">
+            <fieldset>
+              <legend>Toppings?</legend>
+              <div>
+                <input type="checkbox" id="sprinkles" name="sprinkles">
+                <label for="sprinkles">Sprinkles</label>
+              </div>
           
-          <div>
+              <div>
+                <input type="checkbox" id="oreos" name="oreos">
+                <label for="oreos">Oreos</label>
+              </div>
+
+              <div>
+                <input type="checkbox" id="bacon" name="bacon" checked>
+                <label for="bacon">Bacon</label>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class = "question">
+            <fieldset>
+              <legend>Delivery method:</legend>
+          
+              <div>
+                <input type="radio" id="pickup" value="pickup" name="method">
+                <label for="pickup">Pick-up</label>
+              </div>
+          
+              <div>
+                <input type="radio" id="driver" value="driver" name="method">
+                <label for="driver">Delivery driver</label>
+              </div>
+              <div>
+                <input type="radio" id="drone" value="drone" name="method" checked>
+                <label for="drone">Drone</label>
+              </div>
+            </fieldset>
+          </div>  
+          
+          <div class = "question">
             <label for="delivery">Delivery date:</label>
             <input type="date" id="delivery">
           </div>
 
-          <div>
+          <div class = "question">
             <label for="request">Special requests:</label>
             <br>
             <textarea id="request" rows="5" cols="33"></textarea>
