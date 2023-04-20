@@ -29,13 +29,14 @@ h1, h2 {
     color: PowderBlue;
 }
 
+/* navigation */
 nav{
     text-align: center;
 }
 
 nav li {
     display: inline;
-    margin: 10px;
+    margin: 1em;
     width: 100%;
 }
 
@@ -54,6 +55,12 @@ nav li a:hover {
     max-width: 80%;
 }
 
+@media screen and (min-width: 720px){
+    #main {  
+        max-width: 100%;
+    }
+}
+
 h4 + ol > li {
     color: pink;
 }
@@ -66,6 +73,7 @@ summary {
     color: #B59AB7;
 }
 
+/* various media */
 #media {
     display: flex;
     justify-content: space-evenly;
@@ -94,14 +102,16 @@ h2.mh {
     color: #B59AB7;
 }
 
+/* ice cream kiosk */
 #survey {
     display: grid;
     justify-content: center;
-    align-items: start;
+    align-items: center;
+    position: static;
 }
 
 .question {
-    margin: 20px 20px 0 0;
+    margin: 20px 0 20px 0;
     background-color: #4F4557;
     border-radius: 10px;
     padding: 20px;
@@ -122,8 +132,25 @@ label {
     color: peachpuff;
 }
 
+input + label {
+    color: #F4EEE0;
+}
+
 input, select, textarea, button, datalist{
     color:#4F4557;
+}
+
+button {
+   width: 100%;
+   background-color: pink;
+   border-style: none;
+   height: 2lh;
+   border-radius: 10px;
+   font-size: 18pt;
+}
+
+button:active {
+    background-color: peachpuff;
 }
 
 footer {
